@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ToDo App&apos; to &apos;ToDoApp&apos;" description="Rename resource &apos;ToDo App&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ToDo App" name="ToDoApp" stamp="1633787617925" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;ToDoApp&apos;" deleteContents="true" description="Delete resource &apos;ToDoApp&apos;" element1="/ToDoApp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1633788682149"/>
-</session>
