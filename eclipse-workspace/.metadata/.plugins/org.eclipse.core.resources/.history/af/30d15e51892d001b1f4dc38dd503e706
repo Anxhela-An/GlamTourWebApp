@@ -1,0 +1,14 @@
+import java.text.*;
+public class Ushtrimi1 
+{ public static void main(String []args)
+	{
+  int mile=34;
+  double km=(mile*5280*12*2.54)/100*1000;
+  DecimalFormat formatter=new DecimalFormat("0.0");
+   
+   System.out.println(formatter.format(km));
+
+}
+
+
+}

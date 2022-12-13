@@ -1,0 +1,29 @@
+package lesson2;
+
+public class Jump
+{ 
+	private int rope=1;
+	protected boolean outside;
+	
+	public Jump()
+	{
+		this(5);
+		outside=true;
+	}
+	public Jump(int rope)
+	{
+		this.rope=outside?rope:rope+1;
+	}
+	public static void main(String []args)
+	{
+		System.out.println(new Jump().rope);
+	}
+	public void sing(String key,String...harmonies)
+	{
+		
+	}
+	public void sing(int note,String...sound,int music) {
+		
+	}
+
+}

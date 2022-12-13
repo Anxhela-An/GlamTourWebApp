@@ -1,0 +1,16 @@
+import java.text.*;
+import javax.swing.*;
+public class Ushtrimi1 
+{ public static void main(String []args)
+	{
+  String input=JOptionPane.showInputDialog("Vendos numrin ne mile: ");
+  int mile =Integer.parseInt(args[0]);
+  double km=(mile*5280*12*2.54)/100*1000;
+  DecimalFormat formatter=new DecimalFormat("0.0");
+   
+   System.out.println(formatter.format(km));
+
+}
+
+
+}

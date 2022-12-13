@@ -1,0 +1,19 @@
+import javax.swing.*;
+import java.lang.*;
+
+public class KornizaTest3 
+{  public static void main(String []args)
+	{
+	  JFrame korniza_ime=new JFrame();
+	  korniza_ime.getContentPane().add(korniza_ime,new PaneliIm());
+	   korniza_ime.pack();
+		  korniza_ime.setTitle("Vizatues i kornizes");
+		  int gjeresia_kornizes=300;
+		  int lartesia_kornizes=200;
+		  korniza_ime.setSize(gjeresia_kornizes,lartesia_kornizes);
+		  korniza_ime.setVisible(true);
+		  System.out.println("Korniza u paraqit!");
+	
+	}
+
+}

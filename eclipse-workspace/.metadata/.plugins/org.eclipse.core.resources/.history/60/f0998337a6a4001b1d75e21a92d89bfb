@@ -1,0 +1,23 @@
+package lesson2;
+
+public class Jump
+{ 
+	private int size;
+	public Jump(int size)
+	{
+		this.size=size;
+		
+	}
+	public static void h(Jump j,int newSize)
+	{
+		j=new Jump(newSize);
+		j.size=4;
+	}
+	public static final void main(String...params)
+	{
+		 Jump p = new Jump(3);
+		h(p,7);
+		System.out.print(p.size);
+	}
+
+}

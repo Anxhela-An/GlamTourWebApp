@@ -1,0 +1,30 @@
+import java.util.*;
+public class Vektoret 
+{ public static int mbushNotat(int [] n)
+	{ System.out.println("Fut notat ne vektor: ");
+	 Scanner sc = new Scanner(System.in);
+	  for(int i=0; i<n.length;i++)
+	{ n[i]=sc.nextInt();	
+	}
+	 return mbushNotat(n);
+	}
+   public static String mbushStudente(String []s)
+   {
+	   System.out.println("Fut studentet: ");
+	   Scanner sc= new Scanner(System.in);
+	   for(int j=0; j<s.length;j++)
+	   {
+		   s[j]=sc.nextLine();
+	   }
+	   return mbushStudente(s);
+   }
+ 
+public static void main(String []args)
+{
+	int [] notat = new int [25];
+	String [] Studente = new String [25];
+	int rezultati_notat=mbushNotat(notat);
+	String rezultati_studentet=mbushStudente(Studente);
+}
+
+}

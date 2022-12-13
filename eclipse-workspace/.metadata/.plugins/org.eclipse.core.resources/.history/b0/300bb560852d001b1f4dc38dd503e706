@@ -1,0 +1,18 @@
+
+public class Ushtrimi1 
+{ int y=475, s=0;
+   s=s+y%10;
+  System.out.println(s);
+   y=y/10;
+   System.out.println(y);
+   s=s+y%10;
+   System.out.println(s);
+   y=y/10;
+   System.out.println(y);
+   s=s+y%10;
+   System.out.println(s);
+
+
+
+
+}

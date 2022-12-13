@@ -1,0 +1,84 @@
+import java.util.List;
+
+public class Rezervim {
+
+    private String emriBleresit;
+
+    private String mbiemriBleresit;
+
+    private int nrPersonave;
+
+    private boolean isOneWay;
+
+    private Udhetim udhetim;
+
+    public Rezervim(String emriBleresit, String mbiemriBleresit, int nrPersonave, Udhetim udhetim) {
+        this.emriBleresit = emriBleresit;
+        this.mbiemriBleresit = mbiemriBleresit;
+        this.nrPersonave = nrPersonave;
+        this.udhetim = udhetim;
+    }
+
+    public static void main(String ar[]) {
+
+
+
+        // // Tirana, Milan,Athens,Paris, Lisbon
+
+        // Rome, Athens
+
+        Rezervim rezervim = new Rezervim("John", "Doe", 2, null);
+
+
+        // Llogarit kosto
+
+        Double kostoja = rezervim.getKostoja();
+        System.out.println("Kostoja eshte = " + kostoja);
+
+        // Printo fature
+        System.out.println(rezervim.getFature());
+
+        // Printo detaje
+        System.out.println(rezervim.getDetaje());
+
+    }
+
+    public String getFature(){
+        String fature="";
+        fature+="Emri i bleresit " + getEmriBleresit()+"\n";
+        fature+="Mbiemri i bleresit " + getMbiemriBleresit()+"\n";
+        fature+="Kostja e udhetimit i bleresit " + getUdhetim().getCmimi();
+
+        return fature;
+    }
+
+    public String getDetaje(){
+        return "Tipi i udhetimit= " + (isOneWay() ? "Eshte oneWay" : "Eshte round trip");
+    }
+
+    private double getKostoja() {
+        return getUdhetim().getCmimi() * getNrPersonave();
+    }
+
+    public String getEmriBleresit() {
+        return emriBleresit;
+    }
+
+    public String getMbiemriBleresit() {
+        return mbiemriBleresit;
+    }
+
+    public int getNrPersonave() {
+        return nrPersonave;
+    }
+
+    public boolean isOneWay() {
+        return isOneWay;
+    }
+
+    public Udhetim getUdhetim() {
+        return udhetim;
+    }
+
+
+}

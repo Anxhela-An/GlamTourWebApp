@@ -1,0 +1,33 @@
+import javax.swing.*;
+public class Prova 
+{ public static void main(String []args)
+	
+	{ int maxWords = 20;
+	  char[][]word=new char[maxWords][];
+	  int count=0;
+	  boolean processing=true;
+	    while(processing)
+	    {
+	    	String s = JOptionPane.showInputDialog("Fjala: ");
+	    	if(s.equals(""))
+	    	{
+	    		processing=false;
+	    	}
+	    	else
+	    	{
+	    		word[count]=new char[s.length()];
+	    		 for(int j=0;j!=s.length();j++)
+	    		 {
+	    			 word[count][j]=s.charAt(j);
+	    			 count++;
+	    		 }
+	    	}
+	    }
+	    for (int i = 0;i!=count;i++) 
+	    {System.out.print("Gjatësia:"+word[i].length +",fjala :");
+	    for(int j= 0;j !=word[i].length;j++) 
+	    {  System.out.print(word[i][j]); }
+	    System.out.println(); } 
+	    	
+	}
+}
